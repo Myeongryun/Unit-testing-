@@ -1,0 +1,13 @@
+import unittest
+from emotion_detector.detector import detect_emotion
+class TestEmotionDetection(unittest.TestCase):
+if
+def test positive emotion(self):
+result = detect_emotion ("I am feeling great today!")
+self. assertEqual(result, "positive")
+def test_negative_emotion (self):
+result = detect_emotion ("I am feeling sad and down.")
+self. assertEqual(result, "negative")
+def test_neutral_emotion (self):
+result = detect_emotion ("It is a regular day.")
+self. assertEqual (result, "neutral")
